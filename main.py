@@ -2,7 +2,7 @@ from unittest import result
 from fastapi import FastAPI, requests
 from pydantic import BaseModel
 import deepl
-from requests import request, jsonify
+from requests import request
 
 from app import traductor
 
@@ -30,5 +30,5 @@ async def traductor_func(translate_text, target_lang):
         translate_text = traductor(translate_text)
         target_lang = traductor(target_lang)
 
-        return jsonify({"data": result.text})
+        return({"data": result.text})
 
