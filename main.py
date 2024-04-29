@@ -20,3 +20,4 @@ async def traductor_endpoint(request: Request, traductor_data: TraductorRequest)
     traduccion = traductor_func(translate_text, target_lang)
     return {"data": traduccion}
 
+
