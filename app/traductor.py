@@ -7,3 +7,4 @@ def traductor_func(translate_text, target_lang):
     return result.text
 
 
+
