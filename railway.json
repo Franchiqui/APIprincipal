@@ -5,5 +5,12 @@
   },
   "deploy": {
     "startCommand": "hypercorn main:app --bind \"[::]:$PORT\""
+  },
+  "services": {
+    "app": {
+      "env": {
+        "ACCESS_CONTROL_ALLOW_ORIGIN": "*"
+      }
+    }
   }
 }
