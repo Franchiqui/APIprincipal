@@ -1,18 +1,33 @@
 {
-    "steps": [
-      {
-        "name": "gcr.io/cloud-builders/git",
-        "args": ["clone", "https://github.com/FranchiquiJ/APIprincipal.git"]
+  "steps": [
+    {
+      "name": "gcr.io/cloud-builders/git",
+      "args": [
+        "clone",
+        "https://github.com/FranchiquiJ/APIprincipal.git"
+      ]
+    },
+    {
+      "name": "python",
+      "entrypoint": "bash",
+      "args": [
+        "-c",
+        "cd APIprincipal && python -m venv opt-env && source opt-env/bin/activate && pip install -r requirements.txt && gunicorn -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000 -w 4 main:app"
+      ]
+    }
+  ],
+  "timeout": "1200s",
+  "version": "1.0.0",
+  "description": "My Dockerfile example",
+  "services": {
+    "web": {
+      "build": {
+        "dockerfile": "Dockerfile"
       },
-      {
-        "name": "python",
-        "entrypoint": "bash",
-        "args": [
-          "-c",
-          "cd APIprincipal && python -m venv opt-env && source opt-env/bin/activate && pip install -r requirements.txt && gunicorn -k uvicorn.workers.UvicornWorker -b 0.0.0.0:8000 -w 4 main:app"
-        ]
+      "env": {
+        "PYTHON_VERSION": "3.12.3",
+        "NUMPY_VERSION": "1.26.5"
       }
-    ],
-    "timeout": "1200s"
+    }
   }
-  
+}
