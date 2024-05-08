@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://traductor-production-b952.up.railway.app/translate'  # Reemplaza 'tu_dominio' con la URL de tu API
+url = 'http://traductor-production-b952.up.railway.app/translate'
 data = {'textsource': 'Hello, how are you?', 'target_lang': 'ES'}
 
 response = requests.post(url, json=data)
