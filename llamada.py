@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://traductor-production-b952.up.railway.app/translate'
+url = 'http://traductor-production-b952.up.railway.app/translate' #direcion
 data = {'textsource': 'Hello, how are you?', 'target_lang': 'ES'}
 
 response = requests.post(url, json=data)
