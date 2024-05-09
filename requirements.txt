@@ -11,24 +11,22 @@ exceptiongroup==1.2.1
 fastapi==0.111.0
 fastapi-cli==0.0.3
 h11==0.14.0
-h2==4.1.0
-hpack==4.0.0
 httpcore==1.0.5
 httptools==0.6.1
 httpx==0.27.0
-Hypercorn==0.16.0
-hyperframe==6.0.1
 idna==3.7
 Jinja2==3.1.4
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
 mdurl==0.1.2
-numpy==1.26.4
+mkl-fft @ file:///C:/b/abs_19i1y8ykas/croot/mkl_fft_1695058226480/work
+mkl-random @ file:///C:/b/abs_edwkj1_o69/croot/mkl_random_1695059866750/work
+mkl-service==2.4.0
+numpy @ file:///C:/b/abs_c1ywpu18ar/croot/numpy_and_numpy_base_1708638681471/work/dist/numpy-1.26.4-cp39-cp39-win_amd64.whl#sha256=f284633067fde4bb078a09085a1c9e99a3218c129f5312b7b3d76c9340442a25
 opencv-python==4.9.0.80
 orjson==3.10.3
 packaging==24.0
 pillow==10.3.0
-priority==2.0.0
 pydantic==2.7.1
 pydantic_core==2.18.2
 Pygments==2.18.0
@@ -41,8 +39,6 @@ rich==13.7.1
 shellingham==1.5.4
 sniffio==1.3.1
 starlette==0.37.2
-taskgroup==0.0.0a4
-tomli==2.0.1
 typer==0.12.3
 typing_extensions==4.11.0
 ujson==5.9.0
@@ -50,4 +46,3 @@ urllib3==2.2.1
 uvicorn==0.29.0
 watchfiles==0.21.0
 websockets==12.0
-wsproto==1.2.0
