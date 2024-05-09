@@ -1,2 +1,2 @@
-def video_func():
+def video_func(): # Funcion video
     return "Función de video"
