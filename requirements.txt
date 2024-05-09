@@ -1,0 +1,10 @@
+exceptiongroup==1.2.1
+h11==0.14.0
+h2==4.1.0
+hpack==4.0.0
+Hypercorn==0.16.0
+hyperframe==6.0.1
+priority==2.0.0
+taskgroup==0.0.0a4
+tomli==2.0.1
+wsproto==1.2.0
