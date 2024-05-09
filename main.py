@@ -11,7 +11,7 @@ class Libro(BaseModel):
     autor: str
     paginas: int
     editorial: str
-#
+
 @app.get("/")
 def index():
     return {"message" : "Hola, Pythonianos"}
